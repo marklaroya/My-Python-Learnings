@@ -1,6 +1,8 @@
 🐍 MY PYTHON LEARNINGS
 📘 BASICS
 
+MY PYTHON LEARNINGS
+BASICS:
 1.)Script Mode Programming
 
 using on the python interpreter
@@ -18,16 +20,21 @@ print("Hello, World!")
  This is the shebang line. It tells the operating system to use the Python 3 interpreter located at /usr/bin/python3 to execute the script.
 
 
-2.)Python Identifiers
-Python identifier is a name used to identify a variable, function, class, module or other object. 
+2. Python Identifiers
+An identifier is the name used for variables, functions, classes, etc.
 
-Python Class names start with an uppercase letter. All other identifiers start with a lowercase letter.
+Class names start with uppercase letters.
 
-Starting an identifier with a single leading underscore indicates that the identifier is private identifier.
+Other names usually start with lowercase.
 
-Starting an identifier with two leading underscores indicates a strongly private identifier.
+Example:
 
-If the identifier also ends with two trailing underscores, the identifier is a language-defined special name.
+_name → private
+
+__name → strongly private
+
+__name__ → special name (like __init__)
+
 
 3.)Python Lines and Indentation
 
@@ -104,4 +111,3 @@ The semicolon ( ; ) allows multiple statements on the single line given that nei
 
 Example:
 import sys; x = 'foo'; sys.stdout.write(x + '\n')
-
