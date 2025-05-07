@@ -1,0 +1,110 @@
+MY PYTHON LEARNINGS
+BASICS:
+1.)Script Mode Programming
+
+using on the python interpreter
+$ python3 test.py
+	|		|
+	v       V
+ version .pyfile
+
+
+another Example:
+#!/usr/bin/python3
+print("Hello, World!")
+
+ #!/usr/bin/python3:
+ This is the shebang line. It tells the operating system to use the Python 3 interpreter located at /usr/bin/python3 to execute the script.
+
+
+2. Python Identifiers
+An identifier is the name used for variables, functions, classes, etc.
+
+Class names start with uppercase letters.
+
+Other names usually start with lowercase.
+
+Example:
+
+_name → private
+
+__name → strongly private
+
+__name__ → special name (like __init__)
+
+
+3.)Python Lines and Indentation
+
+Python uses lines to run code step by step and 
+Python uses indentation instead of braces ({}) to group code blocks.
+
+Example
+if 5 > 2:
+    print("Yes")  # indented: part of if block
+    print("Still yes")
+print("Done")     # not indented: outside the if
+
+if True:
+   print ("Answer")
+   print ("True")
+else:
+   print ("Answer")
+   print ("False")
+
+4.)Python Multi-Line Statements
+
+Statements in Python typically end with a new line. Python does, however, allow the use of the line continuation character (\) to denote that the line should continue
+
+Example
+total = item_one + \
+        item_two + \
+        item
+
+Also Statements contained within the [], {}, or () brackets do not need to use the line continuation character.
+
+Example:
+days = ['Monday', 'Tuesday', 'Wednesday',
+        'Thursday', 'Friday']
+
+5.)Quotations in Python
+
+Python accepts single ('), double (") and triple (''' or """) quotes to denote string literals, as long as the same type of quote starts and ends the string
+
+Example:
+word = 'word'
+print (word)
+
+sentence = "This is a sentence."
+print (sentence)
+
+paragraph = """This is a paragraph. It is
+ made up of multiple lines and sentences."""
+print (paragraph)
+
+6.)Comments in Python
+
+A comment is a note you write in your code to explain what it does. Python ignores comments when running the program
+
+Example:
+# This is a comment
+print("Hello")  # This prints Hello
+
+Python doesn’t have true multi-line comment syntax, but you can use # on multiple lines:
+# This is a comment
+# that spans multiple lines
+# explaining something
+
+Using triple quotes
+"""
+This looks like a multi-line comment,
+but it's actually a multi-line string
+that’s not assigned to anything.
+Python ignores it too.
+"""
+
+7.)Multiple Statements on a Single Line
+
+The semicolon ( ; ) allows multiple statements on the single line given that neither statement starts a new code block.
+
+Example:
+import sys; x = 'foo'; sys.stdout.write(x + '\n')
